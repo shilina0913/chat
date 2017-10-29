@@ -27,7 +27,6 @@ db.query=function sqlback(sqllan,fn) {
             console.log(err);
             return;
         }
-        console.log(field);
         fn(rows);
     })
 };

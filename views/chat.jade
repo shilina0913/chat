@@ -1,0 +1,21 @@
+//Created by shilina on 2017/10/29.
+doctype html
+html
+    head
+        title=聊天室
+        link(rel='stylesheet', href='/stylesheets/index.css')
+    body
+        p 聊天室
+        #historyMsg
+           each row in rows
+                p=row.info
+
+        #sendMsg
+            form(action='sendMsg', method="post")
+                input(type="text", id="msg", name="msg")
+                button(type="submit",value="send")
+
+
+
+
+

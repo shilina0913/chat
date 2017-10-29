@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>ChatExample</title>
+
 </head>
 <body>
     <p>聊天室</p>
     <div id="historyMsg">
     </div>
     <div id="sendMsg">
-        <input type="button" value="emoji"/>
-        <input type="text"/>
-        <input type="button" value="send">
+        <form action="sendMsg" method="post">
+            <input name="msg" type="text"/>
+            <input type="submit" value="send"/>
+        </form>
     </div>
 </body>
 </html>

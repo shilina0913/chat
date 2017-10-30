@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/index.css')
+    body
+        div.demo-1
+            div.large-header
+                div.logo_box
+                    h3 欢迎你
+                    form(action="#" name="f" method="post")
+                        div.input_outer
+                            span.u_user
+                            input(name="logname" class="text" style="color: #FFFFFF !important" type="text" placeholder="请输入账户")
+                        div.input_outer
+                            span.us_uer
+                            input(name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;" value="" type="password" placeholder="请输入密码")
+                        div.mb2
+                            a(class="act-but submit" href="javascript:;" style="color: #FFFFFF")登录
+
